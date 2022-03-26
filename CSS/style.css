@@ -1,0 +1,365 @@
+*,
+::after,
+::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    scroll-behavior:smooth;
+    /* outline: 1px solid #000; */
+}
+
+:root{
+    /* Typography */
+    --heading: 'Raleway', sans-serif;
+    --body:'Open Sans', sans-serif;
+    /* colors */
+    /* primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    /* Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    /* Neutral */
+    --light-Grayish-Blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+body{
+    font-family: var(--body);
+}
+
+
+/* MOBILE FIRST */
+
+.hero {
+    
+    position: relative;
+}
+
+/* .hero_wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45%;
+    background-color: blue;
+}
+
+.hero_wave ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-image: url("../images/bg-curve-mobile.svg");
+   background-size: 100% 100px;   
+} */
+
+/* .hero *{
+    outline: 1px solid #000;
+} */
+
+.container{
+    background-color:var(--light-Grayish-Blue);
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.hero_nav{
+    display: flex;
+    align-items: center;
+}
+
+.hero_logo{
+    width: 100px;
+}
+
+.hero_fylo{
+    width: 100%;
+    display: block;
+}
+
+.nav_link:first-of-type{
+    margin-left: auto;
+}
+
+.nav_link{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    margin-left: 15px;
+}
+
+.hero_main{
+    color: var(--very-dark-blue);
+    display: grid;
+    gap: 15px;
+    text-align: center;
+    /* position: relative; */
+}
+
+.hero_img{
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero_tittle{
+    font-weight: bold;
+    font-family:var(--heading);
+}
+
+.hero_cta, .hero_email{
+    width: 80%;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-family: inherit;
+    border: none;
+}
+
+.hero_email{
+    border-color: var(--light-Grayish-Blue);
+}
+
+.hero_cta{
+    background-color: var(--bright-blue);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* main */
+.main *{
+    background-color:var(--light-Grayish-Blue);
+    /* outline: 1px solid #000; */
+}
+.main_1{
+    color: var(--very-dark-blue);
+    display: grid;
+    gap: 15px;
+    text-align: center;
+}
+
+.main_imag{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.main_1_tittle{
+    font-weight: bold;
+    font-family:var(--heading);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.main_1_paragraph{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--desaturated-blue);
+}
+
+.main_1_cta{
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 5px;
+    color: var(--moderate-cyan);    
+    text-decoration: none;
+    border-bottom: 1px solid var(--moderate-cyan);
+}
+
+
+.main_1_cta_icon{
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+/* .card *{
+    outline: 1px solid #000;
+} */
+
+.card_item{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -5px rgb(0, 0 , .5);
+    background-color: #fff;
+    position: relative;
+}
+
+.card_item::before{
+    content: "";
+    position: absolute;
+    background-image: url(/images/icon-quotes.svg);
+    width: 30px;
+    height: 40px;
+    background-size:1em;
+    background-repeat: no-repeat;
+    background-position: left;
+    top: -5px;
+}
+
+.card_profile{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.card_picture{
+    width: 30px;
+    height: 30px;
+}
+
+.card_img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card_paragraph{
+    background-color: #fff;
+}
+
+.card_info{
+    margin-left: 1em;
+    background-color: #fff;
+}
+
+.card_name, .card_job{
+    background-color: #fff;
+}
+
+.access *{
+    
+    background-color: var(--desaturated-blue); 
+}
+.access, .access_tittle, .access_paragraph{
+    background-color: var(--desaturated-blue); 
+}
+
+.access_tittle, .access_paragraph{
+    color: var(--light-Grayish-Blue);
+}
+.access_1{
+    width: 90%;
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+}
+.access_1 *{
+    margin-bottom: 1.5em;
+}
+.acces_input{
+    display: block;
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border: none;
+    font-family: inherit;
+}
+
+.e{
+    background-color: var(--bright-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.footer{
+    background-color: var(--very-dark-blue);
+    color: var(--light-Grayish-Blue);
+}
+
+.footer_section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_logo{
+    margin-bottom: 2em;
+}
+
+.footer_contacts{
+    margin-bottom: 3em;
+}
+
+.footer_icon{
+    margin-right: 1em;
+}
+
+.footer_form{
+    display: block;
+    color: var(--light-Grayish-Blue);
+    text-decoration: none;
+    margin-bottom: .8em;
+}
+
+.footer_{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-instagram, .fa-facebook, .fa-twitter{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.hero_email, .hero_cta, .hero_paragraph, .hero_tittle{
+    display: block;
+    width: 90%;
+    margin: 1em;
+}
+
+/* ------------------------------------------------- */
+
+@media (min-width:740px){
+    
+    
+    .hero_main, .main_1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero_tittle{
+        flex-basis: 30%;
+    }
+    
+    .hero_picture, .main_picture{
+        max-width: 600px;
+        min-width: 300px;
+    }
+
+    .hero_img, .main_imag{
+        max-width: 600px;
+        min-width: 300px;
+    }
+
+    .hero_email, .hero_cta, .hero_paragraph, .hero_tittle, .main_1_tittle, .main_1_paragraph, .main_1_paragraph, .card_item{
+        display: block;
+        width: 90%;
+        margin: 1em;
+    }
+
+    .main_1_order{
+        order: -1;
+    }
+
+    .card_item{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
